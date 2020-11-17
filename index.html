@@ -19,6 +19,17 @@
           </div>
           <div class="product-info">
             <h1>{{ product }}</h1>
+            <!-- Conditional Rendering Example 1 -->
+            <!-- <p v-if="inStock">In Stock</p>
+            <p v-else>Out of Stock</p> -->
+            <!-- Toggle Example 2 -->
+            <!-- <p v-show="inStock">In Stock</p> -->
+            <!-- Example 3 -->
+            <p v-if="inventory > 10">In Stock</p>
+            <p v-else-if="inventory <= 10 && inventory > 0">Almost sold out</p>
+            <p v-else>Out of Stock</p>
+            <!-- Code challenge -->
+            <p v-show="onSale">On Sale</p>
           </div>
         </div>
       </div>
