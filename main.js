@@ -18,8 +18,13 @@ const app = Vue.createApp({
         },
         removeItem(id) {
             // this.cart += 1
-            //incorrect
-            this.cart.splice(id)
+            // my-attempt incorrect
+            // this.cart.splice(id)
+
+            const index = this.cart.indexOf(id)
+            if (index > -1) {
+                this.cart.splice(index, 1)
+            }
         }
     }
 })
