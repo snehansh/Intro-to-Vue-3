@@ -23,6 +23,8 @@ app.component('product-display', {
           <li v-for="detail in details">{{ detail }}</li>
         </ul>
 
+        <product-details :details="details"></product-details>
+
         <div 
           v-for="(variant, index) in variants" 
           :key="variant.id" 
