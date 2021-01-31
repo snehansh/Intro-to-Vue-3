@@ -27,6 +27,7 @@ app.component('review-form', {
 
         <label for="rating">Rating:</label>
         <select id="rating" v-model.number="rating">
+            <option>Select</option>
             <option>5</option>
             <option>4</option>
             <option>3</option>
@@ -42,7 +43,7 @@ app.component('review-form', {
             name: '',
             review: '',
             recommendation: 'yes',
-            rating: null
+            rating: 'Select'
         } 
     },
     methods: {
